@@ -90,14 +90,14 @@ const render = (theme) => {
   const palette = palettes[theme];
   return `<svg xmlns="http://www.w3.org/2000/svg" width="520" height="110" viewBox="0 0 520 110" role="img" aria-labelledby="title description">
   <title id="title">${total.toLocaleString('en-US')} GitHub contributions in the last year</title>
-  <desc id="description">GitHub's rolling-year total, including private activity counted anonymously. Repository details are not fetched.</desc>
+  <desc id="description">Rolling-year contribution total from GitHub's public profile, refreshed daily.</desc>
   <rect x="0.5" y="0.5" width="519" height="109" rx="12" fill="${palette.background}" stroke="${palette.border}"/>
   <rect x="0" y="18" width="3" height="74" rx="1.5" fill="${palette.accent}"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
     <text x="20" y="27" fill="${palette.accent}" font-size="11" font-weight="700" letter-spacing="1.3">GITHUB ACTIVITY</text>
     <text x="120" y="83" fill="${palette.text}" font-size="48" font-weight="700" text-anchor="end">${escapeXml(total.toLocaleString('en-US'))}</text>
     <text x="138" y="61" fill="${palette.text}" font-size="18" font-weight="600">contributions</text>
-    <text x="138" y="82" fill="${palette.muted}" font-size="12">rolling year · private activity included anonymously</text>
+    <text x="138" y="82" fill="${palette.muted}" font-size="12">rolling year · updated daily</text>
   </g>
 </svg>
 `;

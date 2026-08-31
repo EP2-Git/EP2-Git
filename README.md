@@ -12,7 +12,7 @@ I build practical software, automations, and AI tools. Right now I'm working on 
     srcset="./assets/github-activity-dark.svg"
   />
   <img
-    alt="Ethan Patten's rolling-year GitHub contribution total, including anonymous private activity"
+    alt="Ethan Patten's rolling-year GitHub contribution total"
     src="./assets/github-activity-light.svg"
   />
 </picture>
